@@ -66,7 +66,7 @@ class DjangoFilterListField(Field):
         extra_filter_meta=None,
         filterset_class=None,
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         if DJANGO_FILTER_INSTALLED:
@@ -170,7 +170,7 @@ class DjangoFilterPaginateListField(Field):
         extra_filter_meta=None,
         filterset_class=None,
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         _fields = _type._meta.filter_fields
@@ -267,7 +267,7 @@ class DjangoListObjectField(Field):
         extra_filter_meta=None,
         filterset_class=None,
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         if DJANGO_FILTER_INSTALLED:

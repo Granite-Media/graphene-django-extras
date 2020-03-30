@@ -35,7 +35,7 @@ class LimitOffsetPaginationField(AbstractPaginationField):
         offset_query_param="offset",
         ordering_param="order",
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         kwargs.setdefault("args", {})
@@ -102,7 +102,7 @@ class PagePaginationField(AbstractPaginationField):
         ordering="",
         ordering_param="order",
         *args,
-        **kwargs,
+        **kwargs
     ):
 
         kwargs.setdefault("args", {})

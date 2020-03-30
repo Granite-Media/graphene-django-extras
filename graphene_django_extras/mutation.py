@@ -276,7 +276,7 @@ class DjangoSerializerMutation(ObjectType):
             cls._meta.output,
             args=cls._meta.arguments["create"],
             resolver=cls.create,
-            **kwargs,
+            **kwargs
         )
 
     @classmethod
@@ -285,7 +285,7 @@ class DjangoSerializerMutation(ObjectType):
             cls._meta.output,
             args=cls._meta.arguments["delete"],
             resolver=cls.delete,
-            **kwargs,
+            **kwargs
         )
 
     @classmethod
@@ -294,7 +294,7 @@ class DjangoSerializerMutation(ObjectType):
             cls._meta.output,
             args=cls._meta.arguments["update"],
             resolver=cls.update,
-            **kwargs,
+            **kwargs
         )
 
     @classmethod
